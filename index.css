@@ -1,0 +1,11 @@
+#heading {
+    background: #575757;
+    background-size: contain;
+    padding: 20px;
+    margin: -10px;
+    border: 10px solid;
+    border-color: #474747;
+    color: white;
+    font-family: "Sans Serif", "Helvetica";
+    font-weight: bold;
+}
