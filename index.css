@@ -1,11 +1,7 @@
-#heading {
-    background: #575757;
-    background-size: contain;
-    padding: 20px;
-    margin: -10px;
-    border: 10px solid;
-    border-color: #474747;
-    color: white;
-    font-family: "Sans Serif", "Helvetica";
-    font-weight: bold;
+aside {
+    @font-face { font-family: Delicious; src: url('Limerick-Serial-Regular.ttf'); }
+    background: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    float: right;
 }
