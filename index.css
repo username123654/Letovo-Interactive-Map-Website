@@ -1,7 +1,40 @@
-aside {
-    @font-face { font-family: Delicious; src: url('Limerick-Serial-Regular.ttf'); }
+@font-face {
+    font-family: Limerick;
+    src: url('Limerick-Serial-Regular.ttf');
+}
+
+#headimg{
+    width: 20%;
+    draggable: false;
+    position: fixed;
+    left: 1%;
+    top: 1%;
+}
+
+#table {
+    position: fixed;
+    box-sizing: border-box;
+    font-family: Limerick;
+    font-size: 20px;
+    word-wrap: break-word;
     background: #f0f0f0;
-    padding: 10px;
-    width: 200px;
+    overflow-y: auto;
+    width: 18%;
+    max-height: calc(99% - 8vw);
+    padding: 2%;
+    left: 1%;
+    top: 8vw;
+}
+
+#chartdiv {
+    position: fixed;
     float: right;
+    width: 80%;
+    height: 100%;
+    top: 0%;
+    left: 20%;
+}
+
+#grade {
+     font-weight: bold;
 }
