@@ -4178,13 +4178,6 @@ am5.ready(function() {
         toggleKey: "active",
         interactive: true,
     });
-    polygonSeriesRU.set("heatRules", [{
-        target: polygonSeries.mapPolygons.template,
-        dataField: "value",
-        min: am5.color(0x8ab7ff),
-        max: am5.color(0x25529a),
-        key: "fill"
-    }]);
 
     polygonSeriesRU.mapPolygons.template.states.create("hover", {
         fill: colors.getIndex(2)
