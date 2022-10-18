@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+
 <!-- Styles -->
 <style>
     #chartdiv {
@@ -4204,6 +4205,13 @@
             toggleKey: "active",
             interactive: true,
         });
+        polygonSeriesRU.set("heatRules", [{
+            target: polygonSeries.mapPolygons.template,
+            dataField: "value",
+            min: am5.color(0x8ab7ff),
+            max: am5.color(0x25529a),
+            key: "fill"
+        }]);
 
         polygonSeriesRU.mapPolygons.template.states.create("hover", {
             fill: colors.getIndex(2)
@@ -4294,12 +4302,12 @@
             {"id": "RU-ALT", "name" : "Алтайский край", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
             {"id": "RU-AD", "name" : "Респ Адыгея", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},]
 //Click event
-        //Click event
         polygonSeriesRU.mapPolygons.template.events.on("click", (ev) => {
             var dataContext = ev.target.dataItem.dataContext;
             var countryDataItem ={};
             for (var i = 0; i < data.length; i++){
                 if(data[i].id === dataContext.id) countryDataItem = data[i];
+                console.log(data[i].id);
             }
 
             //
@@ -4308,6 +4316,7 @@
             ToTable(data_per_regions, city);
         })
 
+//Circles function
 
 //background
         var backgroundSeries = chart.series.push(
@@ -4331,5 +4340,6 @@
 
 <!-- HTML -->
 <div id="chartdiv"></div>
+<div id="table"></div>
 </body>
 </html>
