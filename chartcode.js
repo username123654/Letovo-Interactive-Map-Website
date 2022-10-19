@@ -1,10 +1,21 @@
 function ToTable(data, region){
+    data.sort();
     const newDiv=document.createElement("div");
-    var il;
+    const textReg = document.createElement("div");
+    textReg.setAttribute("id", "reg");
+    textReg.textContent = region;
+    newDiv.appendChild(textReg);
+    var il, mnt=0;
     for(let i = 0; i < data.length; i++){
         if(data[i].City === region){
             il = i;
+            mnt++;
         }
+    }
+    if(mnt == 0){
+        const textNo = document.createElement("div");
+        textNo.textContent = "No students from there";
+        newDiv.appendChild(textNo);
     }
     for(let i = 0; i < data.length; i++){
         if(data[i].City === region){
@@ -13,14 +24,15 @@ function ToTable(data, region){
             const textName = document.createElement("div");
             const textGrade = document.createElement("div");
             textGrade.setAttribute("id", "grade");
-            if(i !== il){
-                textGrade.setAttribute("style", "margin-bottom:50px");
-            }
             textName.textContent = data[i].Name;
             textGrade.textContent = data[i].Grade;
             newEl.appendChild(textName);
             newEl.appendChild(textGrade);
             newLine.appendChild(newEl);
+            if(i !== il){
+                const newHr = document.createElement("hr");
+                newLine.appendChild(newHr);
+            }
             newLine.setAttribute("id", "line");
             newDiv.appendChild(newLine);
         }
@@ -4146,6 +4158,8 @@ am5.ready(function() {
 // Create the map chart
 // https://www.amcharts.com/docs/v5/charts/map-chart/
     var chart = root.container.children.push(am5map.MapChart.new(root, {
+        rotationX: -90,
+        rotationY: -60,
         panX: "rotateX",
         panY: "rotateY",
         projection: am5map.geoOrthographic()

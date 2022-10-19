@@ -1,40 +1,91 @@
-@font-face {
-    font-family: Limerick;
-    src: url('Limerick-Serial-Regular.ttf');
+@media (orientation: landscape) {
+    #headimg{
+        width: 20%;
+        draggable: false;
+        position: fixed;
+        left: 1%;
+        top: 1%;
+    }
 }
 
-#headimg{
-    width: 20%;
-    draggable: false;
-    position: fixed;
-    left: 1%;
-    top: 1%;
+@media (orientation: portrait) {
+    #headimg{
+        height: 10%;
+        draggable: false;
+        position: fixed;
+        left: 1%;
+        top: 1%;
+    }
 }
 
-#table {
-    position: fixed;
-    box-sizing: border-box;
-    font-family: Limerick;
-    font-size: 20px;
-    word-wrap: break-word;
-    background: #f0f0f0;
-    overflow-y: auto;
-    width: 18%;
-    max-height: calc(99% - 8vw);
-    padding: 2%;
-    left: 1%;
-    top: 8vw;
+@media (orientation: landscape) {
+    #table {
+        position: fixed;
+        box-sizing: border-box;
+        font-family: verdana; sans-serif;
+        font-size: 16px;
+        word-wrap: break-word;
+        background: #f0f0f0;
+        overflow-y: auto;
+        width: 28%;
+        max-height: calc(98% - 8vw);
+        padding: 2%;
+        left: 1%;
+        top: 8vw;
+    }
 }
 
-#chartdiv {
-    position: fixed;
-    float: right;
-    width: 80%;
-    height: 100%;
-    top: 0%;
-    left: 20%;
+@media (orientation: portrait) {
+    #table {
+        position: fixed;
+        box-sizing: border-box;
+        font-family: verdana; sans-serif;
+        font-size: 20px;
+        word-wrap: break-word;
+        background: #f0f0f0;
+        overflow-x: auto;
+        height: 38%;
+        width: 96%;
+        max-width: 96%;
+        padding: 2%;
+        left: 2%;
+        top: 11%;
+    }
+}
+
+@media (orientation: landscape) {
+    #chartdiv {
+        position: fixed;
+        float: right;
+        width: 70%;
+        height: 100%;
+        top: 0%;
+        left: 30%;
+    }
+}
+
+@media (orientation: portrait) {
+    #chartdiv {
+        position: fixed;
+        float: right;
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        left: 0%;
+    }
 }
 
 #grade {
      font-weight: bold;
+}
+
+#reg {
+     font-weight: bold;
+     margin-bottom: 30px;
+     font-size: 20px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
