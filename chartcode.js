@@ -430,7 +430,7 @@ am5.ready(function() {
             "Name": "Мария",
             "Gender": "Ж",
             "Grade": "11-ФМ",
-            "City": "Пенза"
+            "City": "Пензенская обл"
         },
         {
             "Name": "Анастасия",
@@ -454,7 +454,7 @@ am5.ready(function() {
             "Name": "Арсен",
             "Gender": "М",
             "Grade": "10-ФМ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Аника",
@@ -1282,49 +1282,49 @@ am5.ready(function() {
             "Name": "Олеся",
             "Gender": "Ж",
             "Grade": "11-БХ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Владимир",
             "Gender": "М",
             "Grade": "11-СГ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Ян",
             "Gender": "М",
             "Grade": "9-ЭМ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Марк",
             "Gender": "М",
             "Grade": "10-ФМ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Вячеслав",
             "Gender": "М",
             "Grade": "11-СГ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Елизавета",
             "Gender": "Ж",
             "Grade": "10-ЭМ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Арина",
             "Gender": "Ж",
             "Grade": "8-А",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Владимир",
             "Gender": "М",
             "Grade": "9-СГ",
-            "City": "Пермь"
+            "City": "Пермский край"
         },
         {
             "Name": "Нгуен-Ньы-Ань",
@@ -4198,9 +4198,9 @@ am5.ready(function() {
     });
 
     var data =  [
-        {"id":"RU-PER","name" : "Пермь", "value": 0, polygonTemplate: { fill: colors.getIndex(8) }},
+        {"id":"RU-PER","name" : "Пермский край", "value": 0, polygonTemplate: { fill: colors.getIndex(8) }},
         {"id":"RU-ZAB" , "name" : "Забайкальский край", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-YEV", "name" : "Еврейский автономный округ", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-YEV", "name" : "Еврейский АО", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-YAR", "name" : "Ярославская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-YAN", "name" : "Ямало-Ненецкий АО", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-VOR" , "name" : "Воронежская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
@@ -4211,7 +4211,7 @@ am5.ready(function() {
         {"id": "RU-UD", "name" : "Удмуртская Респ", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-TYU" , "name" : "Тюменская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-TVE", "name" : "Тверская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-TY", "name" : "Тыва Респ", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-TY", "name" : "Респ Тыва", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-TUL" , "name" : "Тульская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-TOM", "name" : "Томская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-TA" , "name" : "Респ Татарстан", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
@@ -4222,12 +4222,12 @@ am5.ready(function() {
         {"id":"RU-SAR", "name" : "Саратовская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-SAM" , "name" : "Самарская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-SAK", "name" : "Сахалинская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id":"RU-SA" , "name" : "Саха", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id":"RU-SA" , "name" : "Респ Саха", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-RYA" , "name" : "Рязанская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-ROS" , "name" :"Ростовская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-PSK" , "name" : "Псковская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-PRI", "name" : "Приморский край", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-PNZ", "name" : "Пенза", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-PNZ", "name" : "Пензенская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-ORE", "name" : "Оренбургская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-ORL", "name" : "Орловская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-OMS" , "name" : "Омская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
@@ -4239,8 +4239,8 @@ am5.ready(function() {
         {"id": "RU-MUR", "name" : "Мурманская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-MOS", "name" : "Московская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-MOW" , "name" : "Москва", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-MO", "name" : "Мордовия", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-ME", "name" : "Марий-Эл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-MO", "name" : "Респ Мордовия", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-ME", "name" : "Респ Марий-Эл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-MAG", "name" : "Магаданская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-LIP", "name" : "Липецкая обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-LEN", "name" : "Ленинградская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
@@ -4261,7 +4261,7 @@ am5.ready(function() {
         {"id": "RU-KLU", "name" : "Калужская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-KL" , "name" : "Респ Калмыкия", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-KGD", "name" : "Калининградская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-KB", "name" : "Кабардино-Балкария респ", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-KB", "name" : "Кабардино-Балкарская респ", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-IVA", "name" : "Ивановская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-IRK", "name" : "Иркутская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-IN", "name" : "Респ Ингушетия", "value":0 , polygonTemplate: {fill: colors.getIndex(8)}},
@@ -4277,7 +4277,7 @@ am5.ready(function() {
         {"id":"RU-BEL" , "name" : "Белгородская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-BA", "name" : "Респ Башкортостан" , "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id":"RU-AST" , "name" : "Астраханская обл" , "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
-        {"id": "RU-ARK", "name" : "Архангельска обля", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
+        {"id": "RU-ARK", "name" : "Архангельская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-AMU", "name" : "Амурская обл", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-ALT", "name" : "Алтайский край", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},
         {"id": "RU-AD", "name" : "Респ Адыгея", "value": 0, polygonTemplate: {fill: colors.getIndex(8)}},]
