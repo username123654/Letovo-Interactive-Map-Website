@@ -87,7 +87,7 @@ am5.ready(function() {
     });
 //Create series for RU region map
     var polygonSeriesRU = chart.series.push(am5map.MapPolygonSeries.new(root, {
-        geoJSON: am5geodata_russiaLow
+        geoJSON: am5geodata_russiaCrimeaLow
     }));
 
     polygonSeriesRU.mapPolygons.template.setAll({
