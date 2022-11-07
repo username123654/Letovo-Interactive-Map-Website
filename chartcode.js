@@ -75,13 +75,6 @@ am5.ready(function() {
         exclude: ["RU"]
     }));
 
-    worldSeries.mapPolygons.template.setAll({
-        tooltipText: "{name}",
-        interactive: true,
-        fill: am5.color(0xaaaaaa),
-        templateField: "polygonSettings"
-    });
-
     worldSeries.mapPolygons.template.states.create("hover", {
         fill: colors.getIndex(9)
     });
@@ -90,24 +83,23 @@ am5.ready(function() {
         geoJSON: am5geodata_russiaCrimeaLow
     }));
 
-    polygonSeriesRU.mapPolygons.template.setAll({
-        toggleKey: "active",
-        interactive: true,
-    });
-
     polygonSeriesRU.mapPolygons.template.states.create("hover", {
         fill: colors.getIndex(2)
     });
 
     const data_per_regions = data_all.data_per_regions;
     const data = data_all.data;
+    var names = {};
 
 //Click event
     polygonSeriesRU.mapPolygons.template.events.on("click", (ev) => {
         var dataContext = ev.target.dataItem.dataContext;
         var countryDataItem ={};
         for (var i = 0; i < data.length; i++){
-            if(data[i].id === dataContext.id) countryDataItem = data[i];
+            if(data[i].id === dataContext.id){
+                countryDataItem = data[i];
+                polygonSeriesRU[data[i].id].name_rus = data[i].name;
+            }
             console.log(data[i].id);
         }
 
@@ -128,6 +120,19 @@ am5.ready(function() {
         fill: root.interfaceColors.get("alternativeBackground"),
         fillOpacity: 0.1,
         strokeOpacity: 0
+    });
+
+    worldSeries.mapPolygons.template.setAll({
+        tooltipText: "{name}",
+        interactive: true,
+        fill: am5.color(0xaaaaaa),
+        templateField: "polygonSettings"
+    });
+
+    polygonSeriesRU.mapPolygons.template.setAll({
+        tooltipText: "{name_rus}",
+        toggleKey: "active",
+        interactive: true,
     });
 
     backgroundSeries.data.push({
